@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>prediction</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="static/styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+           
+            <nav>
+                <ul class="nav__links">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                </ul>
+            </nav>
+            <a class="cta" href="/predict">Predict</a>
+            
+        </header>
+		
+		<div class="idp-text">
+		{% if prediction %}
+		{% if prediction == 'Liver Patient' %}
+			<h2>Prediction: Liver Patient</h2>
+		{% else %}
+			<h2>You have a liver disease problem, You must and should consult a doctor. Take care.</h2>
+		{% endif %}
+	{% endif %}
+        
+
+		</div>
+        </body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Predicition </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="stylesheet" href="static/styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+    </head>
+	
+	        <header>
+           
+            <nav>
+                <ul class="nav__links">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                </ul>
+            </nav>
+            <a class="cta" href="#">Predict</a>
+            
+        </header>
+		
+
+<form action="/pred" , method="POST">
+    <div class="box">
+        <form>
+            <span class="text-center">Liver Patient Analysis - Login</span> 
+        <div class="input-container">
+            <label>Age</label>
+            <input type="text" id="sen1" name="sen1">
+        </div>
+        <div class="input-container">
+           
+            <select class="user-box-op" id="sen2" name="sen2" >
+            <option class=wnc value="   " selected disabled hidden >Gender</option>
+            <option value="0">Male</option>
+            <option value="1">Female</option>
+            </select>
+        </div> 
+            <div class="input-container">
+            <label >Total_Bilirubin </label>
+            <input type="text" id="sen3" name="sen3">
+            </div>
+            <div class="input-container">
+            <label >Direct_Bilirubin </label>
+            <input type="text" id="sen4" name="sen4">
+            </div>
+            <div class="input-container">
+            <label>Alkaline_Phosphotase</label>
+            <input type="text" id="sen5" name="sen5">
+            </div>
+            <div class="input-container">
+            <label >Alamine_Aminotransferase </label>
+            <input type="text" id="sen6" name="sen6">
+            </div>
+            <div class="input-container">
+            <label>Aspartate_Aminotransferase</label>
+            <input type="text" id="sen7" name="sen7">
+            </div>
+            <div class="input-container">
+            <label >Total_Protiens</label>
+            <input type="text" id="sen8" name="sen8">
+            </div>
+            <div class="input-container">
+            <label >Albumin </label>
+            <input type="text" id="sen9" name="sen9">
+            </div>
+            <div class="input-container">
+            <label >Albumin_and_Globulin_Ratio</label>
+            <input type="text" id="sen10" name="sen10">
+            </div>
+        
+            <input type="submit" value="Submit" class="btn"></button>
+    </form>	
+    </div>
+
+
+
+
+
+  
+</form>
+		
+		
